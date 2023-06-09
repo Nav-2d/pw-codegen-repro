@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pw:stage": "npx playwright test --project=one  --shard=1/2",
+    "pw:stage1": "npx playwright test --project=two --shard=2/2",
+    "all": "npm-run-all --parallel pw:stage pw:stage1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.29.2"
+    "@playwright/test": "^1.34.3"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
