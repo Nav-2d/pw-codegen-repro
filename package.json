@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "pw:stage": "npx playwright test --project=one  --shard=1/2",
-    "pw:stage1": "npx playwright test --project=two --shard=2/2",
+    "pw:stage": "npx playwright test  --shard=1/2",
+    "pw:stage1": "npx playwright test --shard=2/2",
     "all": "npm-run-all --parallel pw:stage pw:stage1"
   },
   "keywords": [],
